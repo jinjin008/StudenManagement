@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="序号："
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/add_bank_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/title" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="题  目:"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/add_bank_layout_title"
+        android:layout_alignBottom="@+id/add_bank_layout_title"
+        android:layout_alignLeft="@+id/id"
+        android:layout_alignStart="@+id/id" />
+
+    <EditText
+        android:id="@+id/add_bank_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bank_layout_id"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title"/>
+    <TextView
+        android:id="@+id/idA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选项 A"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/add_bank_layout_idA"
+        android:layout_alignBottom="@+id/add_bank_layout_idA"
+        android:layout_toLeftOf="@+id/add_bank_layout_idA"
+        android:layout_toStartOf="@+id/add_bank_layout_idA" />
+
+    <EditText
+        android:id="@+id/add_bank_layout_idA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bank_layout_title"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/idB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选项 B"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/add_bank_layout_idB"
+        android:layout_alignBottom="@+id/add_bank_layout_idB"
+        android:layout_toLeftOf="@+id/add_bank_layout_idB"
+        android:layout_toStartOf="@+id/add_bank_layout_idB" />
+
+
+    <EditText
+        android:id="@+id/add_bank_layout_idB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bank_layout_idA"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title"
+         />
+
+    <TextView
+        android:id="@+id/idC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选项 C"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/add_bank_layout_idC"
+        android:layout_alignBottom="@+id/add_bank_layout_idC"
+        android:layout_toLeftOf="@+id/add_bank_layout_idC"
+        android:layout_toStartOf="@+id/add_bank_layout_idC" />
+
+
+    <EditText
+        android:id="@+id/add_bank_layout_idC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bank_layout_idB"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/title"
+         />
+
+    <TextView
+        android:id="@+id/idD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选项 D"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/add_bank_layout_idD"
+        android:layout_alignBottom="@+id/add_bank_layout_idD"
+        android:layout_toLeftOf="@+id/add_bank_layout_idD"
+        android:layout_toStartOf="@+id/add_bank_layout_idD" />
+
+
+    <EditText
+        android:id="@+id/add_bank_layout_idD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bank_layout_idC"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/title"
+       />
+
+
+    <TextView
+        android:id="@+id/trueOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正确选项"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/add_bank_layout_trueOption"
+        android:layout_alignBottom="@+id/add_bank_layout_trueOption"
+        android:layout_toLeftOf="@+id/add_bank_layout_trueOption"
+        android:layout_toStartOf="@+id/add_bank_layout_trueOption" />
+
+
+    <EditText
+        android:id="@+id/add_bank_layout_trueOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bank_layout_idD"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/title"
+         />
+
+    <Button
+        android:id="@+id/add_bank_layout_sure"
+        style="@style/common_button_style"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="确定" />
+
+
+</RelativeLayout>

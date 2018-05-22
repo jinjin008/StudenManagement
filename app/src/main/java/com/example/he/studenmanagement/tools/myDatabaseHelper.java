@@ -24,7 +24,7 @@ public class myDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_ADMIN);
         db.execSQL(CREATE_STUDENT);
         db.execSQL("alter table student add  column ranking integer");
-    }
+        }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -40,6 +40,4 @@ public class myDatabaseHelper extends SQLiteOpenHelper {
         return instance;
 
     }
-
-
 }

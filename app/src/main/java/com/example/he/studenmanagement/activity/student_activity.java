@@ -14,8 +14,6 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.answer.AnalogyExaminationActivity;
 import com.example.he.studenmanagement.R;
 import com.example.he.studenmanagement.tools.myDatabaseHelper;
 
@@ -43,7 +41,7 @@ public class student_activity extends Activity {
         exam.setOnClickListener(new View.OnClickListener() {
             @Override
             public  void  onClick(View v){
-                Intent intent = new Intent(student_activity.this,AnalogyExaminationActivity.class);
+                Intent intent = new Intent(student_activity.this,beginExamActivity.class);
                 startActivity(intent);
             }
         });
