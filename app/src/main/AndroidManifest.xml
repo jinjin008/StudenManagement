@@ -27,6 +27,8 @@
         <activity android:name=".activity.addStudent_info_activity"></activity>
         <activity android:name=".activity.addBankActivity"></activity>
         <activity android:name=".activity.bankInfo_activity"></activity>
+        <activity android:name=".activity.addPaper_activity"></activity>
+        <activity android:name=".activity.paperInfo_activity"></activity>
         <activity android:name=".activity.beginExamActivity"></activity>
         <activity
             android:name=".activity.admin_activity"

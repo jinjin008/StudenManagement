@@ -16,9 +16,14 @@ import com.example.he.studenmanagement.R;
  */
 public class admin_activity extends Activity {
 
-    private Button bank;//
-    private Button paper;//
-    private Button stu;//
+    private Button bank_select;//
+    private Button bank_add;//
+    private Button paper_select;//
+    private Button paper_add;//
+    private Button stu_select;//
+    private Button stu_add;//
+    private Button stu_order;//
+    private Button out;//
     private TextView forceOffline;//强制下线
 
     @Override
@@ -27,39 +32,88 @@ public class admin_activity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.admin_layout);
 
-        bank = (Button) findViewById(R.id.admin_activity_bank);
-        paper = (Button) findViewById(R.id.admin_activity_paper);
-        stu = (Button) findViewById(R.id.admin_activity_stu);
+        bank_select = (Button) findViewById(R.id.admin_bank_select);
+        bank_add = (Button) findViewById(R.id.admin_bank_add);
+        paper_select = (Button) findViewById(R.id.admin_paper_select);
+        paper_add = (Button) findViewById(R.id.admin_paper_add);
+        stu_select = (Button) findViewById(R.id.admin_manage_select);
+        stu_add = (Button) findViewById(R.id.admin_manage_add);
+        stu_order = (Button) findViewById(R.id.admin_manage_order);
+        out  = (Button) findViewById(R.id.out);
         forceOffline = (TextView) findViewById(R.id.admin_activity_forceOffline);
 
-        bank.setOnClickListener(new View.OnClickListener() {
+        bank_select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(admin_activity.this, admin_bank_activity.class);
+                Intent intent = new Intent(admin_activity.this, bankInfo_activity.class);
+
                 startActivity(intent);
 
             }
         });
 
-        paper.setOnClickListener(new View.OnClickListener() {
+        bank_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(admin_activity.this, admin_paper_activity.class);
+                Intent intent = new Intent(admin_activity.this, addBankActivity.class);
+                intent.putExtra("haveData","false");
+                startActivity(intent);
+
+            }
+        });
+
+        paper_select.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(admin_activity.this, paperInfo_activity.class);
 
                 startActivity(intent);
             }
         });
 
-
-        stu.setOnClickListener(new View.OnClickListener() {
+        paper_add.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(admin_activity.this,admin_manage_activity.class);
+            public void onClick(View view) {
+                Intent intent = new Intent(admin_activity.this, addPaper_activity.class);
+                intent.putExtra("haveData","false");
+                startActivity(intent);
+            }
+        });
+
+        stu_select.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(admin_activity.this, studentInfo_activity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        stu_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(admin_activity.this, addStudent_info_activity.class);
+                intent.putExtra("haveData","false");
+                startActivity(intent);
+            }
+        });
+
+        stu_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(admin_activity.this, student_total_score.class);
                 startActivity(intent);
             }
         });
 
 
+        out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(admin_activity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         forceOffline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

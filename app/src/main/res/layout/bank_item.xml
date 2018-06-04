@@ -6,13 +6,28 @@
     <!--listView的布局-->
 
 
-
     <TextView
         android:id="@+id/item_bank_id"
         android:layout_width="wrap_content"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_bank_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_bank_difficult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
         android:textSize="20sp" />
 
     <TextView
@@ -20,7 +35,7 @@
         android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="15dp"
         android:textSize="20sp" />
 
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--listView的布局-->
+
+
+
+    <TextView
+        android:id="@+id/item_paper_id"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/item_paper_date"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_paper_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_paper_name"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_paper_id"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_paper_bankId"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_paper_name"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+
+
+
+
+</RelativeLayout>

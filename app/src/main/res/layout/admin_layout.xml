@@ -42,37 +42,95 @@
 
     <Button
         style="@style/common_button_style"
-        android:id="@+id/admin_activity_bank"
+        android:id="@+id/admin_bank_select"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="70dp"
-        android:text="题库管理"/>
+        android:layout_marginLeft="20dp"
+        android:text="查看题库"/>
 
 
     <Button
+        android:id="@+id/admin_manage_select"
         style="@style/common_button_style"
-        android:id="@+id/admin_activity_paper"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/admin_activity_bank"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="70dp"
-        android:text="试卷管理"/>
-
+        android:text="查看学生信息"
+        android:layout_alignBaseline="@+id/admin_bank_select"
+        android:layout_alignBottom="@+id/admin_bank_select"
+        android:layout_alignLeft="@+id/pic"
+        android:layout_alignStart="@+id/pic" />
 
     <Button
         style="@style/common_button_style"
-        android:id="@+id/admin_activity_stu"
+        android:id="@+id/admin_bank_add"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_below="@+id/admin_activity_paper"
+        android:layout_below="@+id/admin_bank_select"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="增加题库"/>
+
+
+    <Button
+        android:id="@+id/admin_manage_add"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="增加学生信息"
+        android:layout_alignBaseline="@+id/admin_bank_add"
+        android:layout_alignBottom="@+id/admin_bank_add"
+        android:layout_alignLeft="@+id/admin_manage_select"
+        android:layout_alignStart="@+id/admin_manage_select" />
+
+    <Button
+        style="@style/common_button_style"
+        android:id="@+id/admin_paper_select"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="学生管理"/>
+        android:text="查看试卷"
+        android:layout_below="@+id/admin_bank_add"
+        android:layout_alignLeft="@+id/admin_paper_add"
+        android:layout_alignStart="@+id/admin_paper_add" />
+
+    <Button
+        android:id="@+id/admin_manage_order"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="学生成绩排名"
+        android:layout_alignBaseline="@+id/admin_paper_select"
+        android:layout_alignBottom="@+id/admin_paper_select"
+        android:layout_alignLeft="@+id/admin_manage_add"
+        android:layout_alignStart="@+id/admin_manage_add" />
+
+    <Button
+        android:id="@+id/admin_paper_add"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_paper_select"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="添加试卷" />
+
+    <Button
+        android:id="@+id/out"
+        style="@style/common_button_style"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="退出"
+        android:layout_alignBaseline="@+id/admin_paper_add"
+        android:layout_alignBottom="@+id/admin_paper_add"
+        android:layout_alignLeft="@+id/admin_manage_order"
+        android:layout_alignStart="@+id/admin_manage_order" />
 
     <TextView
         android:id="@+id/admin_activity_forceOffline"

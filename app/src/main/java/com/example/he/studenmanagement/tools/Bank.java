@@ -5,7 +5,10 @@ package com.example.he.studenmanagement.tools;
  */
 
 public class Bank {
-    private String id;
+
+    private int id;
+    private int type;
+    private int difficult;
     private String title;
     private String idA;//
     private String idB;//
@@ -13,24 +16,68 @@ public class Bank {
     private String idD;
     private String trueOption;
 
-    public Bank(String id,String title,String idA,String idB,String idC,String idD,String trueOptions){
+
+
+    public Bank(int id,String title,String idA,String idB){
+        this.id=id;
+        this.title=title;
+        this.idA=idA;
+        this.idB=idB;
+    }
+    public Bank(int id,String title,String idA,String idB,String idC,String idD,String trueOption){
         this.id=id;
         this.title=title;
         this.idA=idA;
         this.idB=idB;
         this.idC=idC;
         this.idD=idD;
-        trueOption = trueOptions;
+        this.trueOption=trueOption;
+    }
+    public Bank(int id,int type,int difficult,String title,String idA,String idB,String idC,String idD,String trueOption){
+        this.id=id;
+        this.type=type;
+        this.difficult=difficult;
+        this.title=title;
+        this.idA=idA;
+        this.idB=idB;
+        this.idC=idC;
+        this.idD=idD;
+        this.trueOption = trueOption;
+
+    }
+    public Bank(int type,int difficult,String title,String idA,String idB,String idC,String idD){
+        this.type=type;
+        this.difficult=difficult;
+        this.title=title;
+        this.idA=idA;
+        this.idB=idB;
+        this.idC=idC;
+        this.idD=idD;
 
     }
 
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public int getDifficult() {
+        return difficult;
+    }
+
+    public void setDifficult(int difficult) {
+        this.difficult = difficult;
     }
 
     public String getTitle() {
@@ -73,14 +120,12 @@ public class Bank {
         this.idD = idD;
     }
 
-    public String getTrueOPtion() {
+    public String getTrueOption() {
         return trueOption;
     }
 
-    public void setTrueOPtion(String trueOPtion) {
-        this.trueOption = trueOPtion;
+    public void setTrueOption(String trueOption) {
+        this.trueOption = trueOption;
     }
-
-
 }
 
